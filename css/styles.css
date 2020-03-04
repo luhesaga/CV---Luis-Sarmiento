@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 html {
 	box-sizing: border-box;
@@ -19,7 +19,11 @@ body {
 
 header {
 	margin: 0;
-	background-color: #37474f;
+	background-color: #026fff;
+}
+
+span {
+	color: #026fff;
 }
 
 br {
@@ -29,7 +33,7 @@ br {
 .head {
 	margin: 0;
 	text-align: center;
-	background-color: #37474f;
+	background-color: #026fff;
 	color: white;
 	width: 100%;
 	padding: 10px;
@@ -54,8 +58,44 @@ br {
 	padding: 10px;
 }
 
+nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 60px;
+	background-color: #263238;
+	margin: 0 auto;
+	font-family: 'Roboto';
+  }
+  
+nav a{
+	text-decoration: none;
+	color: white;
+	font-size: 1em;
+	margin-left: 5px;
+}
+
+nav a:hover{
+	color: white;
+	border-bottom: 2px solid #FFF;
+}
+
+nav ul {
+	padding: 5px;
+	background-color: #263238;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav ul li{
+	padding-right: 20px;
+	list-style: none;
+}
+
 section {
-	width: 80%;
+	width: 100%;
 	margin: 20px auto;
 }
 
@@ -73,6 +113,7 @@ section h3,
 	border-radius: 5px;
 	margin: 0px auto;
 	text-align: center;
+	font-family: 'Roboto';
 }
 
 .perfil-luis {
@@ -112,6 +153,7 @@ section h3,
 	font-size: 1.2em;
 	letter-spacing: 2px;
 	margin: 0;
+	font-family: 'Oxanium';
 }
 
 .academic {
@@ -121,20 +163,27 @@ section h3,
 	flex-direction: column;
 	width: 100%;
 	border-radius: 10px;
-	-webkit-box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
+	/* -webkit-box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
 	-moz-box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
-	box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
-	background-color: #fafafa;
+	box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1); */
+	
 }
 
 .nivel {
 	margin: 30px auto;
 	text-align: center;
+	border-radius: 10px;
+	-webkit-box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
+	-moz-box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
+	box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
+	width: 80%;
+	background-color: #fafafa;
+	font-family: 'Oxanium';
 }
 
 .divi {
 	width: 80%;
-	border-bottom: 3px dashed #026fff;
+	border-bottom: 3px dashed #37474f;
 	margin: auto;
 }
 
@@ -190,6 +239,7 @@ section h3,
 	background-color: #37474f;
 	color: white;
 	text-align: center;
+	font-family: 'Oxanium';
 }
 
 .contacto-container p {
@@ -220,12 +270,35 @@ section h3,
 }
 
 .icons {
-	margin: 30px;
+	margin: 30px auto;
+	background-color: #f5f5f5;
+	width: 30%;
+	border-radius: 10px;
+	-webkit-box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
+	-moz-box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
+	box-shadow: 7px 4px 23px -9px rgb(172, 172, 179);
+	opacity: 0.9;
+}
+
+.icons p {
+	color: #026fff;
+	font-size: 0.8em;
+	text-align: left;
+	padding-left: 20px;
+	margin: 5px;
 }
 
 .icons img {
-	margin: 20px;
+	margin: 15px;
 	width: 50px;
+}
+
+.icons:hover {
+	opacity: 1;
+}
+
+.icons img:hover {
+	transform: scale(1.1);
 }
 
 footer {
@@ -255,6 +328,16 @@ footer a {
 		letter-spacing: 2px;
 		width: 90%;
 	}
+
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+		font-size: 1em;
+	}
+
+	nav ul li {
+		margin-top: 5px;
+	}
 	.img-luis {
 		width: 100%;
 		padding-top: 10px;
@@ -277,6 +360,19 @@ footer a {
 
   #mail {
     display: none;
+  }
+
+  .icons {
+	width: 70%;
+  }
+
+  .nivel {
+	  font-size: 1em;
+	  width: 90%;
+  }
+
+  .contacto-container p {
+	  padding: 10px;
   }
 }
 
