@@ -33,7 +33,7 @@ br {
 .head {
 	margin: 0;
 	text-align: center;
-	background-color: #026fff;
+	background-color: #026fff; 
 	color: white;
 	width: 100%;
 	padding: 10px;
@@ -96,7 +96,7 @@ nav ul li{
 
 section {
 	width: 100%;
-	margin: 20px auto;
+	margin: 0 auto;
 }
 
 section h3,
@@ -106,11 +106,11 @@ section h3,
 	background-color: #026fff;
 	color: white;
 	text-transform: uppercase;
-	width: 60%;
+	width: 100%;
 	height: 40px;
 	padding-top: 8px;
 	padding-left: 15px;
-	border-radius: 5px;
+	border-radius: 2px;
 	margin: 0px auto;
 	text-align: center;
 	font-family: 'Roboto';
@@ -150,7 +150,7 @@ section h3,
 
 .perfil p {
 	padding: 10px 40px;
-	font-size: 1.2em;
+	font-size: 1em;
 	letter-spacing: 2px;
 	margin: 0;
 	font-family: 'Oxanium';
@@ -158,15 +158,11 @@ section h3,
 
 .academic {
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	border-radius: 10px;
-	/* -webkit-box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
-	-moz-box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
-	box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1); */
-	
+	border-radius: 10px;	
 }
 
 .nivel {
@@ -196,6 +192,7 @@ section h3,
 	margin: auto;
 	padding: 10px;
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	width: 100%;
@@ -211,7 +208,7 @@ section h3,
 	border: 1px solid rgba(120, 120, 120, 0.2);
 	border-radius: 10px;
 	background-color: #fafafa;
-	width: 220px;
+	width: 60%;
 	opacity: 0.9;
 }
 
@@ -222,7 +219,7 @@ section h3,
 .main_btn {
 	padding: 8px;
 	background-color: #026fff;
-	width: 80%;
+	width: 200px;
 	border: 0px;
 	border-radius: 2px;
 	cursor: pointer;
@@ -250,7 +247,6 @@ section h3,
 	width: 100%;
 	color: white;
 	display: flex;
-	/* justify-content: space-between; */
 	flex-direction: column;
 	text-align: center;
 }
@@ -272,7 +268,7 @@ section h3,
 .icons {
 	margin: 30px auto;
 	background-color: #f5f5f5;
-	width: 30%;
+	width: 350px;
 	border-radius: 10px;
 	-webkit-box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
 	-moz-box-shadow: 7px 4px 23px -9px rgba(43, 41, 43, 1);
@@ -351,7 +347,7 @@ footer a {
 	.formacion h3,
 	.contacto-container h3,
 	.perfil-luis h3 {
-		width: 90%;
+		width: 100%;
   }
   
   .icons img {
@@ -362,10 +358,6 @@ footer a {
     display: none;
   }
 
-  .icons {
-	width: 70%;
-  }
-
   .nivel {
 	  font-size: 1em;
 	  width: 90%;
@@ -373,6 +365,10 @@ footer a {
 
   .contacto-container p {
 	  padding: 10px;
+  }
+
+  footer .option{
+	  margin: 0 auto;
   }
 }
 
